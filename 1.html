@@ -1,22 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WEB1-첫걸음</title>
+  <title>WEB1-welcome</title>
   <meta charset="utf-8">
+  <style>
+   body{
+     margin:0;
+   }
+    #active{
+      color:red;
+    }
+    a {
+      color:black;
+      text-decoration: none;
+    }
+    h1 {
+        font-size: 45px;
+        text-align: center;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding:30px;
+    }
+    #grid ol{
+      border-right: 1px solid gray;
+      width:120px;
+      margin:0;
+      padding:25px;
+      padding-left: 40px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 200px 1fr;
+    }
+    #article{
+      padding-left: 20px;
+    }
+  </style>
 </head>
 
 <body>
 <h1><a href="index.html">WEB</a></h1>
-<ol>
-  <li><a href="1.html">HTML</a></li>
+<div id="grid">
+  <ol>
+  <li><a href="1.html" id="active">HTML</a></li>
   <li><a href="2.html">CSS</a></li>
   <li><a href="3.html">javascript</a></li>
-  <li><a href="4.html">secound</a></li>
-  <li><a href="5.html">댓글 그리고 관리자와 대화</a></li>
-</ol>
+  <li><a href="4.html">service</a></li>
+  <li><a href="5.html">Communication</a></li>
+  </ol>
 
-<h2>MYMY나의 홈페이지</h2>
-<h3>TAG</h3>
+<div id="article">
+  <h2>MYMY나의 홈페이지</h2>
+  <h3>TAG</h3>
 내가 만든
 <strong>나의
   <u>홈페이지</u>
@@ -32,7 +67,6 @@
 때문에 열리는태그 닫히는태그가 있습니다. 그리고 두개의 태그중 p태그를 더 쓰는게 좋습니다. 왜냐하면
 정보로서 보다 가치있게 해주기때문입니다.그리고 css를 통해서 p태그의 디자인을 자유롭게 변경할 수 있기 때문입니다.
 p태그는 하나만써도 단락이 벌어지네요</p>
-<br>
 그리고 css라는게 있습니다. 정보를 꾸며주는 언어죠.위와 같이 p 태그에
 style="margin-top:45px"를 추가하면
 p 태그의 위쪽에 45px 만큼의 여백(margin)이 생깁니다.
@@ -47,9 +81,11 @@ h(1~6)시리즈는 두껍고 줄바꿈이 자동으로 된다. 즉 제목을 나
   </p>
   <h3>슈퍼스타</h3>
   타이틀태그는 책표지이다. 메타 charset utf-8 은 utf8로 열어라 라는 뜻이다.<br>
-  위에 모여있는 태그는 본문을 설명한다. 본문은 바디태그로 묵는다. 본문을 설명하는 머리는 헤드태그로 묵는다.
+  헤드태그는 본문을 설명한다. 본문은 바디태그로 묵는다.
   웹페이지 전체를 묵는 태그는 html태그이다. !doctype html란 태그는 본 웹페이지가 html로 이루어져있는걸 알려준다.
   <h3>링크걸기</h3>
   a태그로 걸며 href로 링크를 걸고 타겟속성으로 새로운탭에서 열수있고, 타이틀속성으로 링크설명을 달수있다.
+</div>
+</div>
   </body>
   </html>
