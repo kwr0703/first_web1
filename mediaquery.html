@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>WEB1-welcome</title>
+    <style>
+      div{
+        border:10px solid green;
+        font-size:60px;
+      }
+      @media(min-width:800px) {
+       #min{
+         display:none;
+        }
+       }
+      @media (max-width:700px){
+        #max{
+          display:none;
+        }
+
+      }
+      </style>
+  </head>
+  <body>
+    <div id="min">
+    min Responsive design
+    </div>
+    <div id="max">
+    max Responsive design
+      </div>
+     검사에서 화면의 크기를 볼수있다.현재 효과는 none이다.<br>
+    min-width800px은 800px~부터 효과를 발동하겠다는 의미,최소 800px까지 효과발동<br>
+    max-width700px은 0~700px까지 효과를 발동시키겠다는 의미,최대 700px까지 효과발동<br>
+    <a href="2.html">이전</a>
+    </body>
+</html>
